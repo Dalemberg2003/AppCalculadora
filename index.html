@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="caja-calculadora">
+            <div class="caja-contenedora">
+                <input type="text" id="operadores-numeros"  readonly>
+                <div class="caja-borrado">
+                    <button id="retr">Retr</button>
+                    <button id="ce" onclick="borrarUno()">CE</button>
+                    <button id="c" onclick="borrar()">C</button>
+                </div>
+                <div class="caja-uno">
+                    <button id="7" onclick="agregar(7)">7</button>
+                    <button id="8" onclick="agregar(8)">8</button>
+                    <button id="9" onclick="agregar(9)">9</button>
+                    <button id="divi" onclick="operador('/')">/</button>
+                    <button id="raiz" onclick="raiz()">Raiz</button>
+                </div>
+                <div class="caja-dos">
+                    <button id="4" onclick="agregar(4)">4</button>
+                    <button id="5" onclick="agregar(5)">5</button>
+                    <button id="6" onclick="agregar(6)">6</button>
+                    <button id="multi" onclick="operador('*')">*</button>
+                    <button id="mod" onclick="operador('mod')">%</button>
+                </div>
+                <div class="caja-tres">
+                    <button id="1" onclick="agregar(1)">1</button>
+                    <button id="2" onclick="agregar(2)">2</button>
+                    <button id="3" onclick="agregar(3)">3</button>
+                    <button id="menos" onclick="operador('-')">-</button>
+                    <button id="uno-x">1/x</button>
+                </div>
+                <div class="caja-cuatro">
+                    <button id="0" onclick="agregar(0)">0</button>
+                    <button id="mas-menos">+/-</button>
+                    <button id="punto" onclick="agregar('.')">.</button>
+                    <button id="mas" onclick="operador('+')">+</button>
+                    <button id="igual" onclick="calcular()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

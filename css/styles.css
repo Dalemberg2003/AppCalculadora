@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+button{
+    cursor: pointer;
+}
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+}
+.caja-calculadora{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 310px;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+.caja-contenedora{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 212px;
+}
+.caja-contenedora input{
+    width: 237px;
+    height: auto;
+    padding: 10px 10px 10px 0;
+    margin: 0 auto;
+    border-color: black;
+    text-align: right;
+}
+.caja-borrado{
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.caja-borrado button{
+    width: 75px;
+    color: red;
+    text-align: center;
+}
+.caja-uno{
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.caja-uno button{
+    width: 42px;
+}
+.caja-dos{
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.caja-dos button{
+    width: 42px;
+}
+.caja-tres{
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.caja-tres button{
+    width: 42px;
+}
+.caja-cuatro{
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.caja-cuatro button{
+    width: 42px;
+}
